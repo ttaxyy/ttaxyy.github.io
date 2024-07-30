@@ -1,1 +1,70 @@
-Hello World
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/style.css" rel="stylesheet" type="text/css" media="all">
+    <script src="/script.js"></script> 
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <div class="izq">
+                <div id="imagen">
+                    <img src="/holstein.jpg" alt="vaca holstein">
+                </div>
+                <nav>
+                    <ul style="width: 100%;">
+                        <li><button onclick="hola()" class="lang-es estilo">Hola</button>
+                            <button onclick="hello()" class="lang-en estilo">Hello</button>
+                        </li>
+                        <li><button onclick="acerca()" class="lang-es estilo">Acerca de</button>
+                            <button onclick="about()" class="lang-en estilo">About</button>
+                        </li>
+                        <li><button onclick="ahora()" class="lang-es estilo">Ahora</button>
+                            <button onclick="now()" class="lang-en estilo">Now</button>
+                        </li>
+                        <li><button onclick="contacto()" class="lang-es estilo">Contacto</button>
+                            <button onclick="contact()" class="lang-en estilo">Contact</button>
+                        </li>
+                        <li style="display: flex; justify-content: space-between;"><button onclick="langEs()" class="lang-en estilo">Español</button>
+                            <button onclick="langEn()" class="lang-es estilo">English</button>
+                            <button onclick="modoOscuro()" id="oscuro" aria-label="Dark mode">&#9790;</button>
+                            <button onclick="modoClaro()" id="claro" class="claroscuro" aria-label="Light mode">&#9728;</button>
+                        </li>
+                            
+                    </ul>
+                </nav>
+            </div>
+            <div class="der" id="texto"></div>
+        </div>
+    </div>
+    <script>
+    const imagen = document.getElementById("imagen").firstElementChild;
+    const nav = document.querySelector("nav");
+    
+    hola()
+
+    function addGirar(){
+        imagen.classList.add('girar');
+    }
+
+    function removeGirar(){
+        imagen.classList.remove('girar');
+    }
+    imagen.addEventListener('mouseover', addGirar);
+    imagen.addEventListener('animationend', removeGirar);
+
+    function aparecer(){
+        nav.classList.add('aparecer');
+    }
+
+    aparecer()
+    nav.addEventListener('animationend', () => {
+        nav.style.overflow = "visible";
+        nav.style.maxHeight = "200px";
+    });
+    </script>
+</body>
+</html>
