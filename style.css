@@ -9,6 +9,7 @@
 	--color-linea: lightgrey;
 	--color-fuente: black;
 	--content-bg:white;
+	--color-highlight:#000FFF;
 }
 
 @-webkit-keyframes fondo-mueve {
@@ -47,6 +48,10 @@ body {
 	animation-timing-function: linear;
 }
 
+p {
+	margin-top: 16px;
+}
+
 button{
 	background: none;
 	color: inherit;
@@ -58,7 +63,7 @@ button{
 
 .estilo {
 	color: transparent;
-	background: linear-gradient(to right,rgb(255, 136, 0) 50%,var(--color-fuente) 0) var(--v,100%)/200% no-repeat;
+	background: linear-gradient(to right, #ff8800 50%,var(--color-fuente) 0) var(--v,100%)/200% no-repeat;
 	-webkit-background-clip: text;
 	background-clip: text;
 	transition: .4s;
@@ -149,6 +154,10 @@ ul{
 	margin: 0;
 	padding: 0;
 	line-height: 25px;
+}
+
+a {
+	color: var(--color-highlight);
 }
 
 .der{

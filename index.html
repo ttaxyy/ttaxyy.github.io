@@ -5,14 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="/style.css" rel="stylesheet" type="text/css" media="all">
     <script src="/script.js"></script> 
-    <title>Document</title>
+    <title>J. Puga</title>
 </head>
 <body>
     <div class="container">
         <div class="content">
             <div class="izq">
                 <div id="imagen">
-                    <img src="/holstein.jpg" alt="vaca holstein">
+                    <img src="/pfp.jpg" alt="vaca holstein">
                 </div>
                 <nav>
                     <ul style="width: 100%;">
@@ -44,7 +44,7 @@
     const imagen = document.getElementById("imagen").firstElementChild;
     const nav = document.querySelector("nav");
     
-    hola()
+    hola();
 
     function addGirar(){
         imagen.classList.add('girar');
@@ -53,6 +53,7 @@
     function removeGirar(){
         imagen.classList.remove('girar');
     }
+
     imagen.addEventListener('mouseover', addGirar);
     imagen.addEventListener('animationend', removeGirar);
 
