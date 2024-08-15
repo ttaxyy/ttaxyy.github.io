@@ -27,7 +27,7 @@ if(lang === "es"){
 }
 
 function hola(){
-    document.getElementById('texto').innerHTML = "<h2>¡Hola!</h2><p>Soy Jett, y me estoy adentrando al mundo digital!</p><p>Me gusta usar este medio para expresarme, aprender y generar cosas nuevas.<br>Recientemente me certifiqué en desarrollo full-stack, así que espero poder irme por ese camino.</p>";
+    document.getElementById('texto').innerHTML = "<h2>¡Hola!</h2><p>Soy Javiera, y me estoy adentrando al mundo digital!</p><p>Me gusta usar este medio para expresarme, aprender y generar cosas nuevas.<br>Recientemente me certifiqué en desarrollo full-stack, así que espero poder irme por ese camino.</p>";
     for(i=0; i<10; i++){
         estilo[i].style.fontWeight = "100";
     }
@@ -35,7 +35,7 @@ function hola(){
 }
 
 function hello(){
-    document.getElementById('texto').innerHTML = "<h2>Hello!</h2><p>I'm Jett, and I'm entering the digital world!</p><p>I like using this medium to express myself, learn and create new things.<br>Recently, I got certified in full-stack development, so I hope I go down that road.</p>";
+    document.getElementById('texto').innerHTML = "<h2>Hello!</h2><p>I'm Javiera, and I'm entering the digital world!</p><p>I like using this medium to express myself, learn and create new things.<br>Recently, I got certified in full-stack development, so I hope I go down that road.</p>";
     for(i=0; i<10; i++){
         estilo[i].style.fontWeight = "100";
     }
@@ -59,7 +59,7 @@ function about(){
 }
 
 function ahora(){
-    document.getElementById('texto').innerHTML = `<h2>Ahora (Última actualización: <time datetime="2024-07-30">30/7/24</time>)</h2><p>Me gradué del bootcamp de Generation Chile, en su programa de Desarrollo Full-Stack Java, y actualmente estoy buscando empleo en esta área.</p><p>Estaré participando del Women's Game Jam Chile del 9 a 11 de agosto.</p>`;
+    document.getElementById('texto').innerHTML = `<h2>Ahora (Última actualización: <time datetime="2024-08-14">14/8/24</time>)</h2><p>Me gradué del bootcamp de Generation Chile, en su programa de Desarrollo Full-Stack Java, y actualmente estoy buscando empleo en esta área.</p><p>Participé del Women's Game Jam Chile este pasado 10 y 11 de agosto, y fue increíble!</p>`;
     for(i=0; i<10; i++){
         estilo[i].style.fontWeight = "100";
     }
@@ -67,7 +67,7 @@ function ahora(){
 }
 
 function now(){
-    document.getElementById('texto').innerHTML = `<h2>Now (Last update: <time datetime="2024-07-30">7/30/24</time>)</h2><p>I just graduated Generation's Full-Stack Java Development's bootcamp, and I'm currently looking for employment in this area.</p><p>I will be participating in this year's Women's Game Jam from august 9 to 11.</p>`;
+    document.getElementById('texto').innerHTML = `<h2>Now (Last update: <time datetime="2024-08-14">8/14/24</time>)</h2><p>I just graduated Generation's Full-Stack Java Development's bootcamp, and I'm currently looking for employment in this area.</p><p>Participated in this year's Women's Game Jam last weekend, it was amazing!.</p>`;
     for(i=0; i<10; i++){
         estilo[i].style.fontWeight = "100";
     }
